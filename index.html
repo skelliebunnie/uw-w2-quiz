@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Color Quiz</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="d-flex flex-column h-100">
+	<header class="jumbotron jubmotron-fluid bg-dark text-light">
+		<div class="container text-center">
+			<h1 class="display-4">Color Quiz</h1>
+			<p class="lead">
+				See how well you recognize &amp; differentiate colors! <br>
+				This is a <span>timed</span> quiz. You have 1m 30s, and you lose <strong>10 seconds</strong> every time you answer incorrectly.
+			</p>
+			<p>To get started, just answer the first question!</p>
+		</div>
+	</header>
+	<article class="row mx-none">
+		<section class="col col-12 text-center mb-5">
+			<h4>Time Remaining: <span id="timeRemaining">90</span> seconds | Score: <span id="points">0</span></h4>
+		</section>
+	</article>
+	<main id="quiz">
+		<div class="row mx-none">
+			<div class="col col-12 text-center mx-none">
+				<h2 id="question">Which color block is <span id="target"></span>?</h2>
+			</div>
+		</div>
+		<div class="row mx-none">
+			<div class="col col-12 text-center mx-none">
+				<ul id="quizList">
+					<li><button id="color0">&nbsp;</button></li>
+					<li><button id="color1">&nbsp;</button></li>
+					<li><button id="color2">&nbsp;</button></li>
+					<li><button id="color3">&nbsp;</button></li>
+					<li><button id="color4">&nbsp;</button></li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<div id="highScores">
+		<div class="row mx-none">
+			<div class="col col-12">
+				<form id="highScoresForm" class="text-center">
+					<label for="yourName">Enter your Name or Initials:</label>
+					<input type="text" name="yourName" id="playerName">
+				</form>
+			</div>
+		</div>
+		<div class="row mx-none">
+			<div class="col col-12 text-center">
+				<ul id="highScoresList"></ul>
+			</div>
+		</div>
+		<div class="row mx-none">
+			<div class="col col-12 text-center">
+				<button id="clearScores" class="btn btn-danger">Clear Scores</button>
+				<button id="restartGame" class="btn btn-success">Play Again</button>
+			</div>
+		</div>
+	</div>
+	<footer class="footer mt-auto py-3 text-center bg-dark">
+    <div class="container">
+      <span class="text-muted">&copy; Copyright 2020 Angel</span><br>
+      <span class="text-light">View on <a href="https://github.com/skelliebunnie/uw-w1-hw2">GitHub</a></span>
+    </div>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>

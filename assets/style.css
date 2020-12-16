@@ -1,0 +1,88 @@
+p.lead span {
+	color: tomato;
+	font-weight: 900;
+	letter-spacing: 1px;
+	font-variant: small-caps;
+	font-size: larger;
+}
+
+.mx-none {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#results {
+	/*visibility: hidden;*/
+	text-align: center;
+	padding: 1rem;
+	font-weight: bold;
+}
+
+#points {display: inline-block;}
+
+#quizList {
+	list-style-type: none;
+	margin: 0 auto;
+	max-width: 90%;
+}
+
+#quizList li {
+	display: inline-block;
+	position: relative;
+}
+
+#quizList button {
+	position: relative;
+	display: inline-block;
+	height: 7rem;
+	width: 7rem;
+	margin: 0.5rem 1rem;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+#quizList button + .fas {
+	display: inline-block;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	left: 2.5rem;
+	top: 2rem;
+	z-index: 10;
+	text-shadow: 1px 0 0 white, -1px 0 0 white, 0 1px 0 white, 0 -1px 0 white, 1px 0 2px white, -1px 0 2px white, 0 1px 2px white, 0 -1px 2px white, 2px 2px 4px white, -2px -2px 4px white;
+}
+
+#highScores {
+	visibility: hidden;
+	margin-top: 2rem;
+}
+
+#highScoresForm {
+	margin-bottom: 0;
+}
+
+#highScoresList {
+	list-style-type: none;
+	margin: 0 auto 2rem;
+	width: 100%;
+}
+
+#highScoresList li {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	border-bottom: 1px solid dimgray;
+	margin: 0 auto;
+}
+
+#clearScores,
+#restartGame {
+	/*margin-bottom: 3rem;*/
+}
+
+@media all and (min-width: 768px) {
+	#quizList { max-width: 50%; }
+	#highScoresList { max-width: 20%; }
+}
